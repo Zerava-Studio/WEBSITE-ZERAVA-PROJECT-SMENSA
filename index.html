@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zerava Studio — Awal yang sederhana, Kelak jadi sinema.</title>
+  <meta name="description"
+    content="Zerava Studio adalah rumah produksi film pendek dari Banyumas yang lahir dari semangat kolektif anak muda kreatif." />
+  <meta name="theme-color" content="#0b1320" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="assets/hero/landing1.webp" />
+  <link rel="preload" as="image" href="assets/hero/landing2.webp" />
+  <link rel="preload" as="image" href="assets/hero/landing3.webp" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Inter:wght@300;400;500;600&family=Bebas+Neue&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" class="navbar">
+    <a href="#hero" class="nav-logo-group">
+      <img src="assets/logos/smk.webp" alt="SMKN 1 Banyumas" class="nav-logo-img" width="40" height="40" />
+      <img src="assets/logos/zrv.webp" alt="Zerava Studio" class="nav-logo-img" width="40" height="40" />
+      <div class="nav-logo-text">ZERAVA <span>STUDIO</span></div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#movies">Works</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active" style="background-image:url('assets/hero/landing1.webp')"></div>
+      <div class="hero-slide" style="background-image:url('assets/hero/landing2.webp')"></div>
+      <div class="hero-slide" style="background-image:url('assets/hero/landing3.webp')"></div>
+      <div class="hero-slide" style="background-image:url('assets/hero/landing4.webp')"></div>
+      <div class="hero-slide" style="background-image:url('assets/hero/landing5.webp')"></div>
+      <div class="hero-slide" style="background-image:url('assets/hero/landing6.webp')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Part of : @smkn1banyumas</p>
+      <h1 class="hero-title">ZERAVA STUDIO</h1>
+      <p class="hero-sub">Awal yang sederhana,<br>Kelak jadi sinema<span class="hero-exclaim">.</span></p>
+      <a href="#movies" class="btn-primary" id="heroCtaBtn">Tonton Karya Kami</a>
+    </div>
+    <button class="slider-btn prev" id="sliderPrev" aria-label="Previous slide">&#8592;</button>
+    <button class="slider-btn next" id="sliderNext" aria-label="Next slide">&#8594;</button>
+    <div class="slider-dots" id="sliderDots">
+      <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3"></button>
+      <button class="dot" data-index="3" aria-label="Slide 4"></button>
+      <button class="dot" data-index="4" aria-label="Slide 5"></button>
+      <button class="dot" data-index="5" aria-label="Slide 6"></button>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="about-header">
+        <div class="section-label">Tentang Kami</div>
+        <h2 class="about-title">Who We Are</h2>
+        <div class="about-underline"></div>
+      </div>
+
+      <div class="about-narrative">
+        <div class="about-col">
+          <p>Zerava Studio adalah rumah produksi film pendek independen yang berbasis di Banyumas, Jawa Tengah.
+            Didirikan pada Juni 2025 dan berafiliasi dengan SMKN 1 Banyumas, Zerava lahir dari semangat kolektif anak
+            muda yang percaya bahwa setiap karya besar selalu dimulai dari langkah-langkah kecil yang konsisten.</p>
+        </div>
+        <div class="about-col">
+          <p>Kami fokus pada pengembangan dan produksi film pendek, dokumenter kreatif, dan narasi visual yang menangkap
+            emosi serta mengabadikan momen bermakna. Dari balik lensa, kami merangkai cerita — menjelajahi sudut pandang
+            baru yang jujur dan memberikan ruang bagi suara-suara lokal untuk terdengar.</p>
+        </div>
+      </div>
+
+      <div class="about-vm-grid">
+        <div class="about-vm-card">
+          <div class="vm-badge">VISI</div>
+          <h3>Ruang Kreatif untuk Sinema</h3>
+          <p>Menjadi ruang kreatif yang mengubah ide sederhana menjadi karya sinema yang hidup, menginspirasi, dan
+            membekas di hati setiap penonton.</p>
+        </div>
+        <div class="about-vm-card">
+          <div class="vm-badge">MISI</div>
+          <h3>Langkah Nyata dari Banyumas</h3>
+          <ul>
+            <li>Menjelajahi cerita-cerita lokal dan sudut pandang baru yang jujur dari balik layar.</li>
+            <li>Membangun kolaborasi tim yang solid melalui disiplin proses pra hingga pascaproduksi.</li>
+            <li>Terus belajar, berkembang, dan mendobrak batasan kreativitas menuju panggung sinema yang sesungguhnya.
+            </li>
+          </ul>
+        </div>
+        <div class="about-vm-card">
+          <div class="vm-badge">FILOSOFI</div>
+          <h3>Awal yang Sederhana</h3>
+          <p>Kami percaya bahwa sinema bukan hanya tentang apa yang dilihat, tapi tentang apa yang dirasakan. Setiap
+            frame adalah keputusan, setiap suara adalah jiwa dari gambar — dan setiap langkah kecil adalah awal dari
+            karya besar.</p>
+        </div>
+      </div>
+
+      <div class="about-gallery">
+        <div class="about-gallery-item">
+          <img src="assets/bts/bts1.webp" alt="Zerava Studio production" loading="lazy" decoding="async" />
+        </div>
+        <div class="about-gallery-item about-gallery-text">
+          <span>Selamat datang,<br>filmmakers!</span>
+        </div>
+        <div class="about-gallery-item">
+          <img src="assets/bts/bts2.webp" alt="Behind the scenes" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOUNDERS ========== -->
+  <section class="section founders-section">
+    <div class="container">
+      <div class="founders-header">
+        <div class="section-label">Pendiri</div>
+        <h2 class="founders-title">Our Founders</h2>
+        <p class="founders-subtitle">Founded by filmmakers.</p>
+      </div>
+
+      <div class="founders-layout">
+        <div class="founders-photo">
+          <img src="assets/crew/founders.webp" alt="Ghaniyy Akbar & Rifky Ivanda — Zerava Studio founders"
+            loading="lazy" decoding="async" />
+        </div>
+        <div class="founders-bios">
+          <div class="founder-bio-block">
+            <h3>Ghaniyy Akbar</h3>
+            <p class="founder-role-tag">Lead Studio / Director</p>
+            <p>Pemegang kompas kreatif di Zerava Studio. Ghaniyy adalah orang di balik layar yang bertanggung jawab
+              menjaga arah visual dan memastikan setiap ide sederhana milik tim berhasil dieksekusi menjadi sebuah karya
+              nyata yang berkarakter.</p>
+          </div>
+          <div class="founder-bio-block">
+            <h3>Rifky Ivanda</h3>
+            <p class="founder-role-tag">Sound Man / Audio Director</p>
+            <p>Bagi Rifky, sinema bukan hanya tentang apa yang dilihat, tapi tentang apa yang dirasakan melalui telinga.
+              Ia bertugas merawat emosi penonton lewat detail perekaman suara yang jernih dan penataan audio yang
+              sinematik.</p>
+          </div>
+
+          <!-- Motto (aligned with photo bottom) -->
+          <div class="founders-motto">
+            <div class="motto-label">Motto</div>
+            <p class="motto-text">"Awal yang sederhana, Kelak jadi sinema."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="section-label">Layanan Kami</div>
+      <h2 class="section-title">What We Do</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="10" width="32" height="28" rx="3" stroke="currentColor" stroke-width="2" />
+              <path d="M36 18l8-5v22l-8-5V18z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+              <circle cx="20" cy="24" r="5" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h3>Short Film Production</h3>
+          <p class="service-sub">Pembuatan Film Pendek</p>
+          <p>Berpengalaman dalam memproduksi narasi fiksi dan dokumenter kreatif secara utuh dari ide hingga layar.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="8" width="36" height="32" rx="3" stroke="currentColor" stroke-width="2" />
+              <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2" />
+              <circle cx="24" cy="24" r="3" fill="currentColor" />
+              <path d="M6 16h36" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h3>Event Documentation</h3>
+          <p class="service-sub">Dokumentasi Acara & Photography</p>
+          <p>Menangkap esensi dan momen berharga setiap perayaan dengan estetika visual yang tinggi.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2" />
+              <path d="M16 36v4M32 36v4M12 40h24" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              <rect x="14" y="18" width="20" height="12" rx="1" stroke="currentColor" stroke-width="2" />
+              <circle cx="24" cy="24" r="3" fill="currentColor" />
+            </svg>
+          </div>
+          <h3>School Documentation</h3>
+          <p class="service-sub">Dokumentasi untuk: Film, Acara, Wisuda</p>
+          <p>Mendokumentasikan momen penting sekolah — dari produksi film hingga acara dan wisuda — dengan kualitas
+            profesional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTION PROCESS ========== -->
+  <section class="section process-section">
+    <div class="container">
+      <div class="section-label">Alur Kerja</div>
+      <h2 class="section-title">Production Process</h2>
+      <div class="process-grid">
+        <div class="process-col">
+          <div class="process-img">
+            <img src="assets/process/pra.webp" alt="Pre-production stage" loading="lazy" decoding="async" />
+            <div class="process-img-overlay">
+              <span class="process-num">#1</span>
+              <h3>PRE-PRODUCTION</h3>
+            </div>
+          </div>
+          <p>Di mana cerita dimulai. Kami merancang skenario, menyusun konsep visual, dan mempersiapkan fondasi terbaik
+            sebelum kamera mulai merekam.</p>
+        </div>
+        <div class="process-col">
+          <div class="process-img">
+            <img src="assets/process/pro.webp" alt="Production stage" loading="lazy" decoding="async" />
+            <div class="process-img-overlay">
+              <span class="process-num">#2</span>
+              <h3>PRODUCTION</h3>
+            </div>
+          </div>
+          <p>Eksekusi penuh dedikasi. Menyatukan visi sutradara, sinematografi, tata cahaya, dan suara di lokasi syuting
+            untuk menangkap momen magis.</p>
+        </div>
+        <div class="process-col">
+          <div class="process-img">
+            <img src="assets/process/post.webp" alt="Post-production stage" loading="lazy" decoding="async" />
+            <div class="process-img-overlay">
+              <span class="process-num">#3</span>
+              <h3>POST-PRODUCTION</h3>
+            </div>
+          </div>
+          <p>Menyempurnakan rasa. Melalui proses editing, sound design, dan color grading, kami memastikan hasil akhir
+            siap memberikan pengalaman sinematik yang utuh.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MOVIES ========== -->
+  <section id="movies" class="section movies-section">
+    <div class="container">
+      <div class="section-label">Portofolio Film</div>
+      <h2 class="section-title">Our Movies</h2>
+      <div class="movies-grid">
+
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img src="assets/movies/poster_berderap.webp" alt="BERDERAP movie poster" loading="lazy" decoding="async" />
+            <span class="movie-badge">Official Entry FLS3N</span>
+          </div>
+          <div class="movie-info">
+            <h3>BERDERAP</h3>
+            <p class="movie-genre">Film Pendek Fiksi</p>
+            <p class="movie-synopsis">Berderap mengisahkan gerakan maju yang serentak dan teratur dalam mencapai tujuan.
+              Cerita berfokus pada seorang anak laki-laki dengan minat besar dalam seni tari yang kerap diremehkan
+              karena stereotip gender.</p>
+            <a href="https://www.instagram.com/reel/DZuKYQBzIjk" target="_blank" rel="noopener"
+              class="btn-outline">Tonton Trailer ↗</a>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img src="assets/movies/poster_harapan.webp" alt="HARAPAN DARI LANGKAH KECIL movie poster" loading="lazy"
+              decoding="async" />
+            <span class="movie-badge">Produksi Internal</span>
+          </div>
+          <div class="movie-info">
+            <h3>HARAPAN DARI<br>LANGKAH KECIL</h3>
+            <p class="movie-genre">Film Pendek Fiksi</p>
+            <p class="movie-synopsis">Sebuah narasi visual tentang perjuangan, mimpi, dan bagaimana sebuah keputusan
+              kecil yang diambil hari ini mampu mengubah arah masa depan selamanya.</p>
+            <a href="https://youtu.be/z584VixVnco" target="_blank" rel="noopener" class="btn-outline">Tonton di YouTube
+              ↗</a>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster">
+            <img src="assets/movies/poster_dua.webp" alt="DUA SISI movie poster" loading="lazy" decoding="async" />
+            <span class="movie-badge">Produksi Internal</span>
+          </div>
+          <div class="movie-info">
+            <h3>DUA SISI</h3>
+            <p class="movie-genre">Film Pendek Fiksi</p>
+            <p class="movie-synopsis">Proyek film internal Zerava Studio yang masih dalam tahap produksi dan belum dapat
+              dipublikasikan.</p>
+            <span class="movie-status">Belum dipublikasikan</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUKSI & EVENT TERKINI ========== -->
+  <section class="section events-section">
+    <div class="container">
+      <div class="section-label">Terbaru</div>
+      <h2 class="section-title">Produksi & Event Terkini</h2>
+      <p class="section-desc">Kabar terbaru dari Zerava Studio — dari produksi film hingga dokumentasi event.</p>
+      <div class="events-grid">
+
+        <div class="event-card">
+          <div class="event-img">
+            <img src="assets/movies/poster_berderap.webp" alt="Film Berderap — Zerava Studio" loading="lazy"
+              decoding="async" />
+            <div class="event-badge">Film Pendek</div>
+          </div>
+          <div class="event-body">
+            <span class="event-date">April 2026</span>
+            <h3>BERDERAP</h3>
+            <p class="event-subtitle">Film Pendek Fiksi — Official Entry FLS3N 2026</p>
+            <p class="event-desc">Berderap mengisahkan gerakan maju yang serentak dan teratur. Cerita berfokus pada
+              seorang anak laki-laki dengan minat besar dalam seni tari yang kerap diremehkan karena stereotip gender.
+            </p>
+            <div class="event-links">
+              <a href="https://www.instagram.com/reel/DZuKYQBzIjk" target="_blank" rel="noopener" class="event-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="5 3 19 12 5 21 5 3" />
+                </svg>
+                Tonton Trailer
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-img">
+            <img src="assets/event/wisuda.webp" alt="Wisuda SMK — The Final Chapter of Valtherions" loading="lazy"
+              decoding="async" />
+            <div class="event-badge">Event</div>
+          </div>
+          <div class="event-body">
+            <span class="event-date">Mei 2026</span>
+            <h3>The Final Chapter of Valtherions</h3>
+            <p class="event-subtitle">Dokumentasi Wisuda SMK — SMKN 1 Banyumas</p>
+            <p class="event-desc">Dokumentasi resmi acara wisuda SMKN 1 Banyumas. Sebuah momen perpisahan yang penuh
+              makna, diabadikan dengan estetika visual profesional oleh tim Zerava Studio.</p>
+            <div class="event-links">
+              <a href="https://www.youtube.com/live/qihQRiDQG2w" target="_blank" rel="noopener" class="event-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="5 3 19 12 5 21 5 3" />
+                </svg>
+                Live Stream
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SCHOOL EVENT ========== -->
+  <section id="school-event" class="section school-event-section">
+    <div class="container">
+      <div class="section-label">Event Sekolah</div>
+      <h2 class="section-title">School Event</h2>
+      <p class="section-desc">Dokumentasi dan layanan event sekolah oleh Zerava Studio.</p>
+      <div class="events-grid">
+
+        <div class="event-card">
+          <div class="event-img">
+            <img src="assets/event/photobooth.webp" alt="Photobooth Event — Zerava Studio" loading="lazy"
+              decoding="async" />
+            <div class="event-badge">Event</div>
+          </div>
+          <div class="event-body">
+            <span class="event-date">13-14 Agustus 2025</span>
+            <h3>PHOTOBOOTH</h3>
+            <p class="event-subtitle">Photobooth Interaktif — Event Sekolah</p>
+            <div class="event-links">
+              <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTQ0MDc2NzkzMDE4MTgy?story_media_id=3695830395700213913_75905312073"
+                target="_blank" rel="noopener" class="event-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="5 3 19 12 5 21 5 3" />
+                </svg>
+                Lihat Story
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-img">
+            <img src="assets/event/wisuda.webp" alt="Wisuda SMK — The Final Chapter of Valtherions" loading="lazy"
+              decoding="async" />
+            <div class="event-badge">Wisuda</div>
+          </div>
+          <div class="event-body">
+            <span class="event-date">7 Mei 2026</span>
+            <h3>The Final Chapter of Valtherions</h3>
+            <p class="event-subtitle">Dokumentasi Wisuda SMK — SMKN 1 Banyumas</p>
+            <div class="event-links">
+              <a href="https://www.youtube.com/live/qihQRiDQG2w" target="_blank" rel="noopener" class="event-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="5 3 19 12 5 21 5 3" />
+                </svg>
+                Live Stream
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PENGALAMAN & KARYA ========== -->
+  <section class="section experience-section">
+    <div class="container">
+      <div class="section-label">Portofolio</div>
+      <h2 class="section-title">Pengalaman & Karya</h2>
+      <div class="exp-grid">
+        <div class="exp-card">
+          <div class="exp-card-icon">&#9654;</div>
+          <h3>BERDERAP</h3>
+          <p class="exp-card-genre">Film Pendek Fiksi</p>
+          <p class="exp-card-desc">Official Entry FLS3N 2026. Mengisahkan gerakan maju yang serentak dan teratur —
+            tentang seorang anak laki-laki dengan minat besar dalam seni tari yang kerap diremehkan.</p>
+          <span class="exp-card-badge">FLS3N 2026</span>
+        </div>
+        <div class="exp-card">
+          <div class="exp-card-icon">&#9654;</div>
+          <h3>HARAPAN DARI LANGKAH KECIL</h3>
+          <p class="exp-card-genre">Film Pendek Fiksi</p>
+          <p class="exp-card-desc">Sebuah narasi visual tentang perjuangan, mimpi, dan bagaimana sebuah keputusan kecil
+            yang diambil hari ini mampu mengubah arah masa depan selamanya.</p>
+          <span class="exp-card-badge">Produksi Internal</span>
+        </div>
+        <div class="exp-card">
+          <div class="exp-card-icon">&#9654;</div>
+          <h3>SMKN 1 BANYUMAS</h3>
+          <p class="exp-card-genre">Dokumentasi & Photography</p>
+          <p class="exp-card-desc">Dokumentasi resmi berbagai event sekolah, acara OSIS, dan kegiatan akademik SMKN 1
+            Banyumas dengan estetika visual profesional.</p>
+          <span class="exp-card-badge">Ongoing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== OUR TEAM ========== -->
+  <section id="team" class="section crew-section">
+    <div class="container">
+      <!-- Team Hero Banner -->
+      <div class="crew-hero">
+        <img src="assets/hero/landing1.webp" alt="Zerava Studio team" loading="lazy" decoding="async" />
+        <div class="crew-hero-overlay"></div>
+        <div class="crew-hero-content">
+          <div class="section-label">OUR CREW</div>
+          <h2 class="crew-hero-title">Meet The Team</h2>
+          <p class="crew-hero-sub">Kru di balik film pendek BERDERAP — Official Entry FLS3N 2026.</p>
+        </div>
+      </div>
+
+      <p class="crew-flip-hint">Hover or tap to flip</p>
+
+      <!-- Crew Flip Cards — BERDERAP FLS3N 2026 -->
+      <div class="crew-grid">
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/akbar.webp" alt="Ghaniyy Akbar" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Akbar</span>
+                <span class="crew-front-role">Camera Operator</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Ghaniyy Akbar</h4><span class="crew-back-role">Camera Operator</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di Harapan Dari Langkah Kecil — Produksi Internal</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">Camera Operator</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/iky.webp" alt="Rifky Ivanda" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Rifky</span>
+                <span class="crew-front-role">Sound Recordist</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Rifky Ivanda</h4><span class="crew-back-role">Sound Recordist</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di BERDERAP — FLS3N 2026</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">Sound Recordist</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/deri.webp" alt="Deri Nugroho" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Deri</span>
+                <span class="crew-front-role">Produser</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Deri Nugroho</h4><span class="crew-back-role">Produser</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di BERDERAP — FLS3N 2026</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">Produser</span></div>
+                <div class="crew-exp-item"><span class="crew-exp-title">Casting Director</span></div>
+                <div class="crew-exp-item"><span class="crew-exp-title">Digital Imaging</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/bastian.webp" alt="Sebastian Saputra" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Sebastian</span>
+                <span class="crew-front-role">Gaffer</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Sebastian Saputra</h4><span class="crew-back-role">Gaffer</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di BERDERAP — FLS3N 2026</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">Gaffer</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/faiz.webp" alt="Faiz Musyafa'" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Faiz</span>
+                <span class="crew-front-role">Penulis Naskah</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Faiz Musyafa'</h4><span class="crew-back-role">Penulis Naskah &amp; DOP</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di BERDERAP — FLS3N 2026</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">Penulis Naskah</span></div>
+                <div class="crew-exp-item"><span class="crew-exp-title">DOP</span></div>
+                <div class="crew-exp-item"><span class="crew-exp-title">Editor</span></div>
+                <div class="crew-exp-item"><span class="crew-exp-title">Casting Director</span></div>
+                <div class="crew-exp-item"><span class="crew-exp-title">Digital Imaging</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/hestu.webp" alt="Trandwika Hestu Sundoro" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Hestu</span>
+                <span class="crew-front-role">Sutradara</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Trandwika Hestu Sundoro</h4><span class="crew-back-role">Sutradara</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di BERDERAP — FLS3N 2026</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">Sutradara</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/keiko.webp" alt="Keiko Marco" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Keiko</span>
+                <span class="crew-front-role">Gaffer</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Keiko Marco</h4><span class="crew-back-role">Gaffer &amp; BTS</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di BERDERAP — FLS3N 2026</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">Gaffer</span></div>
+                <div class="crew-exp-item"><span class="crew-exp-title">BTS</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/billy.webp" alt="Ektada Ageng" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Ektada</span>
+                <span class="crew-front-role">BTS</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Ektada Ageng</h4><span class="crew-back-role">BTS</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di BERDERAP — FLS3N 2026</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">BTS</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/ibra.webp" alt="Ibrathaillah Abbad" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Ibrathaillah</span>
+                <span class="crew-front-role">Runner</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Ibrathaillah Abbad</h4><span class="crew-back-role">Runner</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di BERDERAP — FLS3N 2026</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">Runner</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/afifah.webp" alt="Afifah Larassati" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Afifah</span>
+                <span class="crew-front-role">Penulis Naskah</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Afifah Larassati</h4><span class="crew-back-role">Penulis Naskah &amp; Art Director</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di BERDERAP — FLS3N 2026</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">Penulis Naskah</span></div>
+                <div class="crew-exp-item"><span class="crew-exp-title">Art Director</span></div>
+                <div class="crew-exp-item"><span class="crew-exp-title">Clapper</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/hersita.webp" alt="Hersita Azmi" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Hersita</span>
+                <span class="crew-front-role">Wardrobe</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Hersita Azmi</h4><span class="crew-back-role">Wardrobe</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di BERDERAP — FLS3N 2026</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">Wardrobe</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/angelina.webp" alt="Angelina Rahma" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Angelina</span>
+                <span class="crew-front-role">Wardrobe</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Angelina Rahma</h4><span class="crew-back-role">Wardrobe &amp; BTS</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di BERDERAP — FLS3N 2026</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">Wardrobe</span></div>
+                <div class="crew-exp-item"><span class="crew-exp-title">BTS</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/carissa.webp" alt="Carissa Jivita" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Carissa</span>
+                <span class="crew-front-role">Wardrobe</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Carissa Jivita</h4><span class="crew-back-role">Wardrobe</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di BERDERAP — FLS3N 2026</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">Wardrobe</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/vico.webp" alt="Vico Evrat" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Vico</span>
+                <span class="crew-front-role">Sound Recordist</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Vico Evrat</h4><span class="crew-back-role">Sound Recordist &amp; Gaffer</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di BERDERAP — FLS3N 2026</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">Sound Recordist</span></div>
+                <div class="crew-exp-item"><span class="crew-exp-title">Gaffer</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-card-wrapper">
+          <div class="crew-card">
+            <div class="crew-front">
+              <img src="assets/crew/gigih.webp" alt="Gigih Ikhtiar" loading="lazy" decoding="async" />
+              <div class="crew-front-overlay">
+                <span class="crew-front-name">Gigih</span>
+                <span class="crew-front-role">BTS</span>
+              </div>
+            </div>
+            <div class="crew-back">
+              <div class="crew-back-header">
+                <h4>Gigih Ikhtiar</h4><span class="crew-back-role">BTS</span>
+              </div>
+              <div class="crew-experience">
+                <h5>Peran di BERDERAP — FLS3N 2026</h5>
+                <div class="crew-exp-item"><span class="crew-exp-title">BTS</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BEHIND THE SCENE ========== -->
+  <section class="section bts-section">
+    <div class="container">
+      <div class="section-label">Di Balik Layar</div>
+      <h2 class="section-title">Behind The Scene</h2>
+    </div>
+    <div class="bts-swiper-wrapper">
+      <div class="bts-swiper" id="btsSwiper">
+        <div class="bts-slide"><img src="assets/bts/bts1.webp" alt="Behind the scene 1" loading="lazy"
+            decoding="async" /></div>
+        <div class="bts-slide bts-placeholder" data-label="Shooting Day — Lokasi Outdoor"></div>
+        <div class="bts-slide"><img src="assets/bts/bts2.webp" alt="Behind the scene 2" loading="lazy"
+            decoding="async" /></div>
+        <div class="bts-slide bts-placeholder" data-label="Color Grading Session"></div>
+        <div class="bts-slide bts-placeholder" data-label="Casting & Rehearsal"></div>
+      </div>
+      <button class="bts-btn bts-prev" id="btsPrev" aria-label="Previous">&#8592;</button>
+      <button class="bts-btn bts-next" id="btsNext" aria-label="Next">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- ========== OUR CLIENTS ========== -->
+  <section class="section partners-section">
+    <div class="container">
+      <div class="section-label">Mitra Kami</div>
+      <h2 class="section-title">Our Clients</h2>
+      <p class="partners-tagline">Kolaborasi yang membangun karya.</p>
+      <div class="partners-row">
+
+        <a href="https://smkn1bms.sch.id" target="_blank" rel="noopener" class="partner-logo">
+          <img src="assets/logos/smk.webp" alt="SMKN 1 Banyumas" loading="lazy" decoding="async" />
+          <span class="partner-name">SMKN 1 Banyumas</span>
+        </a>
+
+        <a href="https://www.instagram.com/graphoss.id" target="_blank" rel="noopener" class="partner-logo">
+          <img src="assets/logos/graphos.webp" alt="Graphos.id" loading="lazy" decoding="async" />
+          <span class="partner-name">Graphos.id</span>
+        </a>
+
+        <a href="https://www.osissmensa.web.id" target="_blank" rel="noopener" class="partner-logo">
+          <img src="assets/logos/osis.webp" alt="OSIS Smensa" loading="lazy" decoding="async" />
+          <span class="partner-name">OSIS Smensa</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="contact" class="footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+
+          <!-- Column 1: Brand + Social -->
+          <div class="footer-brand">
+            <div class="footer-logo">ZERAVA <span>STUDIO</span></div>
+            <p class="footer-tagline">Di balik setiap frame yang berbicara, ada dedikasi yang tak terhingga. Zerava
+              Studio hadir sebagai rumah produksi yang mengubah ide sederhana menjadi karya visual sinematik.</p>
+            <div class="footer-social">
+              <a href="https://www.instagram.com/zeravastudio__" target="_blank" rel="noopener" class="social-icon"
+                aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+              <a href="https://www.tiktok.com/@zeravastudio" target="_blank" rel="noopener" class="social-icon"
+                aria-label="TikTok">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.27 8.27 0 004.84 1.56V6.78a4.85 4.85 0 01-1.07-.09z" />
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/@ZeravaProduction" target="_blank" rel="noopener" class="social-icon"
+                aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="footer-col">
+            <h4>Studio</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#movies">Our Movies</a></li>
+              <li><a href="#team">Our Team</a></li>
+              <li><a href="#team">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Services -->
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Film Production</a></li>
+              <li><a href="#services">Short Film</a></li>
+              <li><a href="#services">Documentary</a></li>
+              <li><a href="#services">Event Coverage</a></li>
+              <li><a href="#services">Photography</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact -->
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>
+                <a href="mailto:zeravaproduction@gmail.com">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                  zeravaproduction@gmail.com
+                </a>
+              </li>
+              <li class="footer-location">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>Banyumas, Jawa Tengah<br>Indonesia 53100</span>
+              </li>
+              <li class="footer-location">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <span>Part of @smkn1banyumas</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Zerava Studio. All Rights Reserved. · Part of SMKN 1 Banyumas · Made with ❤ in Banyumas</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

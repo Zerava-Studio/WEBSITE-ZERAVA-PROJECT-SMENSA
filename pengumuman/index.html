@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HASIL SELEKSI CZRV 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-900 min-h-screen text-white font-sans">
+    
+    <!-- STATE 1: COUNTDOWN TIMER -->
+    <div id="countdown-state" class="hidden min-h-screen flex flex-col items-center justify-center p-4">
+        <div class="w-full max-w-md">
+            <!-- Logo Header -->
+            <div class="text-center mb-8">
+                <img src="assets/images/logo-zerava.webp" alt="Logo Zerava Studio" class="h-16 w-auto mx-auto mb-4">
+                <h1 class="text-2xl font-bold text-gray-200">HASIL SELEKSI CZRV 2026</h1>
+            </div>
+            
+            <!-- Countdown Banner -->
+            <div class="bg-blue-900 rounded-lg p-6 mb-4">
+                <div class="grid grid-cols-4 gap-2 text-center">
+                    <div class="bg-blue-800 rounded p-3">
+                        <div id="days" class="text-3xl font-bold">0</div>
+                        <div class="text-xs text-blue-200">HARI</div>
+                    </div>
+                    <div class="bg-blue-800 rounded p-3">
+                        <div id="hours" class="text-3xl font-bold">00</div>
+                        <div class="text-xs text-blue-200">JAM</div>
+                    </div>
+                    <div class="bg-blue-800 rounded p-3">
+                        <div id="minutes" class="text-3xl font-bold">00</div>
+                        <div class="text-xs text-blue-200">MENIT</div>
+                    </div>
+                    <div class="bg-blue-800 rounded p-3">
+                        <div id="seconds" class="text-3xl font-bold">00</div>
+                        <div class="text-xs text-blue-200">DETIK</div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="text-center text-gray-400 text-sm">DIBUKA TANGGAL 25 JULI 2026 19:00 WIB</p>
+        </div>
+    </div>
+
+    <!-- STATE 2: INPUT FORM -->
+    <div id="form-state" class="hidden min-h-screen flex flex-col items-center justify-center p-4">
+        <div class="w-full max-w-md">
+            <!-- Logo Header -->
+            <div class="text-center mb-8">
+                <img src="assets/images/logo-zerava.webp" alt="Logo Zerava Studio" class="h-16 w-auto mx-auto mb-4">
+                <h1 class="text-2xl font-bold text-gray-200">HASIL SELEKSI CZRV 2026</h1>
+                <p class="text-gray-400 text-sm mt-2">Masukkan Nomor Registrasi Anda</p>
+            </div>
+            
+            <!-- Form -->
+            <div class="bg-gray-800 rounded-lg p-6 space-y-4">
+                <!-- Nomor Registrasi -->
+                <div>
+                    <label class="block text-gray-300 text-sm mb-2">Nomor Registrasi</label>
+                    <input type="text" id="input-noreg" placeholder="Contoh: CZRV202601" 
+                           class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+                </div>
+                
+                <!-- Submit Button -->
+                <button onclick="checkResult()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition-colors duration-200 mt-4">
+                    LIHAT HASIL SELEKSI
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- STATE 3: TIDAK LULUS / REJECTED SCREEN -->
+    <div id="rejected-state" class="hidden min-h-screen flex flex-col items-center justify-center p-4">
+        <div class="w-full max-w-md">
+            <!-- Red Banner -->
+            <div class="bg-red-600 rounded-t-lg p-6 text-center">
+                <h2 class="text-xl font-bold">ANDA DINYATAKAN TIDAK LULUS SELEKSI CZRV 2026</h2>
+                <p class="text-sm mt-2 text-red-100">MASIH ADA KESEMPATAN UNTUK TETAP BERKARYA DAN MENGIKUTI SELEKSI DI GELOMBANG BERIKUTNYA ATAU JALUR LAIN.</p>
+            </div>
+            
+            <!-- Card Body -->
+            <div class="bg-gray-800 rounded-b-lg p-6">
+                <div class="space-y-3 text-sm">
+                    <div class="flex justify-between border-b border-gray-700 pb-2">
+                        <span class="text-gray-400">No. Registrasi</span>
+                        <span id="rejected-noreg" class="text-white">-</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-700 pb-2">
+                        <span class="text-gray-400">Nama Lengkap</span>
+                        <span id="rejected-nama" class="text-white">-</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-700 pb-2">
+                        <span class="text-gray-400">Kelas/Jurusan</span>
+                        <span id="rejected-kelas" class="text-white">-</span>
+                    </div>
+                    <div class="flex justify-between border-b border-gray-700 pb-2">
+                        <span class="text-gray-400">Asal Sekolah</span>
+                        <span class="text-white">SMK Negeri 1 Banyumas</span>
+                    </div>
+                </div>
+                
+                <button onclick="backToForm()" class="w-full bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition-colors duration-200 mt-6">
+                    KEMBALI
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- STATE 4: LULUS / ACCEPTED SCREEN -->
+    <div id="accepted-state" class="hidden min-h-screen flex flex-col items-center justify-center p-4">
+        <div class="w-full max-w-2xl">
+            <!-- Blue Banner -->
+            <div class="bg-blue-600 rounded-t-lg p-6 flex items-center justify-between">
+                <div>
+                    <h2 class="text-xl font-bold">SELAMAT! ANDA DINYATAKAN LULUS SELEKSI CZRV 2026</h2>
+                </div>
+                <img src="assets/images/logo-zerava.webp" alt="Logo Zerava Studio" class="h-12 w-auto">
+            </div>
+            
+            <!-- Card Body -->
+            <div class="bg-gray-800 rounded-b-lg p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Left Column: Candidate Info & QR Code -->
+                    <div class="space-y-4">
+                        <div class="space-y-3 text-sm">
+                            <div class="flex justify-between border-b border-gray-700 pb-2">
+                                <span class="text-gray-400">No. Registrasi</span>
+                                <span id="accepted-noreg" class="text-white">-</span>
+                            </div>
+                            <div class="flex justify-between border-b border-gray-700 pb-2">
+                                <span class="text-gray-400">Nama Lengkap</span>
+                                <span id="accepted-nama" class="text-white">-</span>
+                            </div>
+                            <div class="flex justify-between border-b border-gray-700 pb-2">
+                                <span class="text-gray-400">Kelas/Jurusan</span>
+                                <span id="accepted-kelas" class="text-white">-</span>
+                            </div>
+                            <div class="flex justify-between border-b border-gray-700 pb-2">
+                                <span class="text-gray-400">Asal Sekolah</span>
+                                <span class="text-white">SMK Negeri 1 Banyumas</span>
+                            </div>
+                        </div>
+                        
+                        <!-- QR Code -->
+                        <div class="bg-white rounded-lg p-4 flex flex-col items-center">
+                            <img src="assets/images/qr-code.webp" alt="QR Code WhatsApp Group" class="w-32 h-32 mb-2">
+                            <p class="text-gray-800 text-xs text-center">Scan untuk bergabung ke WhatsApp Group Zerava Utama</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Instructions -->
+                    <div class="bg-gray-700 rounded-lg p-4">
+                        <h3 class="font-bold text-white mb-3">Informasi Bergabung</h3>
+                        <p class="text-gray-300 text-sm mb-4">Silakan lakukan konfirmasi ulang. Informasi bergabung dengan Crew Utama Zerava dapat diakses dengan memindai QR Code di samping atau klik tombol di bawah ini.</p>
+                        
+                        <a href="https://chat.whatsapp.com/LUR4IGjas7e0D0SDP3CR97?s=qt&p=a&ilr=4" target="_blank" class="block w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg text-center transition-colors duration-200">
+                            JOIN WHATSAPP GROUP
+                        </a>
+                        
+                        <div class="mt-4 text-xs text-gray-400 space-y-2">
+                            <p>• Pastikan data yang Anda masukkan sesuai dengan formulir pendaftaran</p>
+                            <p>• Segera bergabung dengan grup untuk informasi selanjutnya</p>
+                            <p>• Selamat bergabung di Crew Utama Zerava!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="backToForm()" class="w-full bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 rounded-lg transition-colors duration-200 mt-6">
+                    KEMBALI
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

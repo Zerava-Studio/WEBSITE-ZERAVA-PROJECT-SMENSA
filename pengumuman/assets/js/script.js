@@ -24,7 +24,7 @@ const candidates = [
 
 // Configuration
 const COUNTDOWN_ENABLED = true; // Set to true to enable countdown, false to bypass
-const TARGET_DATE = new Date('2026-07-22T19:00:00').getTime(); // Target date: 25 Juli 2026 19:00 WIB
+const TARGET_DATE = new Date('2026-07-25T19:00:00').getTime(); // Target date: 25 Juli 2026 19:00 WIB
 const WHATSAPP_GROUP_LINK = 'https://chat.whatsapp.com/LUR4IGjas7e0D0SDP3CR97?s=qt&p=a&ilr=4'; // Replace with actual WhatsApp group link
 
 // State management
